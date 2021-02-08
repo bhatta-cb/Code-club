@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung|ZCOOL+QingKe+HuangYou&display=swap');
+#div1 h1{
+    font-family: 'Yeon Sung' ;
+    text-align: center;
+
+}
+#container{
+    height:500px;
+    font-family: 'Yeon Sung' ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+#phone{
+    display:flex;
+    flex-direction:column;
+
+}
+
+#div1{
+    height: 800px;
+    background: center/cover no-repeat url("/static/contact.jpg") ;
+}

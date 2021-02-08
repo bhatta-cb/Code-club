@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Coding Club of MIT-WPU
+        div.small Eat Sleep Code and Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Python Coding
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.jpg")
+                div.card-content
+                    p Coding in python makes life easy along with many innovations.
+        div.card
+            h3 Design Your Own Websites
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p Using HTML,CSS,JAVA-Script to develop front end and backend of website.
+        div.card
+            h3 Competetive Coding
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpg")
+                div.card-content
+                    p Starting from the basics of C,C++,Java to data structures in those programming.
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsers
+            img(src="/static/img/logo1.jpg", alt="sponsers img",id="spImage1")
+            img(src="/static/img/logo2.jpg", alt="sponsers img",id="spImage2")
+            img(src="/static/img/logo3.jpg", alt="sponsers img",id="spImage3")
+            img(src="/static/img/logo4.webp", alt="sponsers img",id="spImage4")
+    

@@ -1,0 +1,58 @@
+extends base.pug
+
+block scripts 
+    script(src='/ststic/index.js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/styleregister.css
+
+    
+
+        
+
+block content
+    div.container
+            h1 Fill Out The Form To Register
+            form(action="/register",method="post",class="myForm")
+                label(for='name',class="label") Name
+                    input(type="text",id="name",class="myInput",name="name",placeholder="Enter your name")
+                label(for='phone',class="label") Phone.No
+                    input(type="phone",id="phone",class="myInput",name="phone",placeholder="Enter your phone")
+                label(for='email',class="label") Email
+                    input(type="email",id="email",class="myInput",name="email",placeholder="Enter your email")
+                label(for='prn',class="label") PRN.No
+                    input(type="number",id="prn",class="myInput",name="prn",placeholder="Enter your PRN number")
+                
+                label(for='experience',class="label1") Do you have any previous coding experience?:
+                    input(type="checkbox",id="experience",class="myInput1",name="prn" checked)
+                
+                label(for='gender',class="label2") Gender:
+                    |   Male 
+                    input(type='radio' name='myGender',id="gender")
+                    |  Female 
+                    input(type='radio' name='myGender')
+
+                label(for='branch',class="label1") Please enter your branch
+                    select(name='branch',id="branch",class="myInput1")
+                        option(value='cse' selected) Computer Science and Engineering
+                        option(value='mech') Mechanical Engineering
+                        option(value='civil') Civil Engineering
+                        option(value='electronics') Electronics and Telecommunication Engineering
+                        option(value='electrical') Electrical Engineering
+                        option(value='chemical') Chemical Engineering
+
+                label(for='programming',class="label1") Please enter your preferred Programming Language
+                    select(name='programming',id="programming",class="myInput1")
+                        option(value='c' selected) C
+                        option(value='cpp') C++
+                        option(value='java') Java
+                        option(value='js') Java Script
+                        option(value='html') HTML
+                        option(value='css') CSS
+
+
+                button(class="btn")
+                    |Submit
+            

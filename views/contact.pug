@@ -1,0 +1,27 @@
+extends base.pug
+
+block scripts 
+    script(src='/ststic/index.js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/stylecontact.css
+
+        
+
+block content
+    div#div1
+        div#container
+            h1 Contact Us
+            div#phone
+                h2 Phone Number:
+                |999999999999
+                h2 888888888888
+                h2 777777777777
+            div#email
+                h2 Email
+                |coding@mitwpu.org
+                |letscode@gmail.com
+                |codingclub@hotmail.com
+            
